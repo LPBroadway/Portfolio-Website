@@ -2,21 +2,21 @@
 
 @keyframes border-highlight {
     0% {
-        border-color: var(--grid);
+        border-color: var(--grid-highlight);
     }
 
     100% {
-        border-color: var(--grid-highlight);
+        border-color: var(--title);
     }
 }
 
 @keyframes border-unhighlight {
     0% {
-        border-color: var(--grid-highlight);
+        border-color: var(--title);
     }
 
     100% {
-        border-color: var(--grid);
+        border-color: var(--grid-highlight);
     }
 }
 
@@ -57,7 +57,7 @@ h6 {
     background-size: 2vw 2vw;
     background-image:
         linear-gradient(to right, var(--gridlines) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--gridlines) 1px, transparent 1px)
+        linear-gradient(to bottom, var(--gridlines) 1px, transparent 1px);
 }
 
 .wrapper {
@@ -103,8 +103,8 @@ h6 {
 }
 
 .background {
-    border: 1px solid var(--grid);
-    background-color: var(--background);
+    border: 1px solid var(--grid-highlight);
+    background-color: var(--secondary);
     padding: max(30px, 2vw);
     box-sizing: border-box;
     border-radius: 1vw;
@@ -129,6 +129,7 @@ h6 {
 .content {
     font-family: "Inter", sans-serif;
     display: flex;
+    flex-direction: column;
     gap: 1vw;
     overflow-y: auto;
     padding-bottom: 20px;
@@ -147,7 +148,7 @@ a {
     background-size: 0% 1px;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 0.3s ease, color 0.2s ease-in-out;
+    transition: all 0.3s ease, color 0.2s ease-in-out;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -170,36 +171,37 @@ a:hover {
 
 .title {
     font-family: "Oranienbaum", serif;
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: var(--title);
-}
-
-.profilepic {
-    width: 60%;
-    margin: 0 auto;
-    object-fit: cover;
-    border-radius: 100vw;
-    border: 0.10vw solid var(--grid);
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 2vh;
     width: 100%;
+}
+
+.flex>* {
+    flex: 1 1 auto;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    height: 100%;
+}
+
+.column>div {
+    flex: 1 1 auto;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-size: 0.9em;
 }
 
 .card p {
@@ -220,4 +222,47 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.links a {
+    padding: 5px 10px;
+    border-radius: 100px;
+    border: 2px solid var(--grid-highlight);
+    box-shadow: 2px 2px 0px var(--grid-highlight);
+}
+
+.links a:hover {
+    border-color: var(--highlight);
+    box-shadow: 2px 2px 0px var(--highlight);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.profilepic {
+    position: relative;
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 100vw;
+    border: 0.10vw solid var(--grid);
+    flex: 1 1 40%;
 }
