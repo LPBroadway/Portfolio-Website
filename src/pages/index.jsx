@@ -103,11 +103,13 @@ function Index() {
         </div>
       </div>
       <div className="row flex">
-        <div className="background card">
-          yeppa
+        <div className="card-link background" onClick={() => { window.location.href = '/projects' }}>
+          <span className="title">Projects</span>
+          <span class="material-symbols-rounded">arrow_outward</span>
         </div>
         <div className="background card">
-          yeppa
+          <span className="title">Current Work</span>
+          <p>Currently working full-time as a Graphic Designer at <a href="https://midantrimsigns.com/" target="_blank">Mid Antrim Signs.</a></p>
         </div>
         <div className="background card">
           yeppa
