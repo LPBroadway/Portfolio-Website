@@ -109,7 +109,7 @@ function Index() {
         </div>
         <div className="background card">
           <span className="title">Current Work</span>
-          <p>Currently working full-time as a Graphic Designer at <a href="https://midantrimsigns.com/" target="_blank">Mid Antrim Signs.</a></p>
+          <p>Currently working full-time as a Graphic Designer at <a href="https://midantrimsigns.com/" target="_blank">Mid Antrim Signs</a></p>
         </div>
         <div className="background card">
           yeppa
