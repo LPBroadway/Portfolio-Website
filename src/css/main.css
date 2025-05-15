@@ -6,13 +6,13 @@
     }
 
     100% {
-        border-color: var(--title);
+        border-color: var(--highlight);
     }
 }
 
 @keyframes border-unhighlight {
     0% {
-        border-color: var(--title);
+        border-color: var(--highlight);
     }
 
     100% {
@@ -67,7 +67,7 @@ h6 {
     height: 100svh;
     height: 100dvh;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, transparent 20%, var(--background) 90%);
+    background-image: linear-gradient(to bottom, transparent 0%, var(--atmosphere) 90%);
 }
 
 .container {
@@ -132,7 +132,7 @@ h6 {
     flex-direction: column;
     gap: 1rem;
     overflow-y: auto;
-    padding-bottom: 20px;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -144,10 +144,6 @@ h6 {
 a {
     color: var(--text);
     text-decoration: none;
-    background-image: linear-gradient(var(--highlight), var(--highlight));
-    background-size: 0% 1px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
     transition: all 0.3s ease, color 0.2s ease-in-out;
     display: flex;
     align-items: center;
@@ -169,10 +165,34 @@ a:hover {
     cursor: pointer;
 }
 
+.scale {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale:hover {
+    transform: scale(1.02);
+}
+
 .title {
     font-family: "Oranienbaum", serif;
     font-size: 1.3rem;
+    color: var(--highlight);
+}
+
+.secondary {
     color: var(--title);
+}
+
+.link {
+    background-image: linear-gradient(var(--highlight), var(--highlight));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.link:hover {
+    background-size: 100% 1px;
 }
 
 .row {
@@ -273,6 +293,10 @@ a:hover {
 }
 
 .card-link {
+    cursor: pointer;
+}
+
+.link-title {
     display: flex;
     justify-content: space-between;
     align-items: center;

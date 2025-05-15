@@ -12,7 +12,7 @@ function Index() {
           <div className="background card">
             <span className="title">Welcome</span>
             <p>
-              Hi there. I'm Liam. A web developer with a background in graphic design and a keen eye for detail. I build responsive, custom-styled websites that blend clean code with thoughtful design.
+              Hi there! I'm Liam. A web developer with a background in graphic design and a keen eye for detail. I build responsive, custom-styled websites that blend clean code with thoughtful design.
             </p>
             <p>
               I’ve just completed my degree in Interactive Computing and will be graduating in July. I'm currently looking to start my journey in the tech industry.
@@ -103,19 +103,26 @@ function Index() {
         </div>
       </div>
       <div className="row flex">
-        <div className="card-link background" onClick={() => { window.location.href = '/projects' }}>
-          <span className="title">Projects</span>
+        <div className="scale card-link background" onClick={() => { window.location.href = '/projects' }}>
+          <div className="link-title">
+            <span className="title">Projects</span>
+            <span class="material-symbols-rounded">arrow_outward</span>
+            </div>
+          <p>Check out some of my university coursework or personal projects.</p>
+        </div>
+        <div className="background card">
+          <span className="title">Current Position</span>
+          <p>Working full-time as a Graphic Designer at <a className="link" href="https://midantrimsigns.com/" target="_blank">Mid Antrim Signs</a></p>
+        </div>
+        <div className="background card">
+          yeppa
+        </div>
+        <div className="scale card-link background">
+        <div className="link-title">
+          <span className="title">About Me</span>
           <span class="material-symbols-rounded">arrow_outward</span>
-        </div>
-        <div className="background card">
-          <span className="title">Current Work</span>
-          <p>Currently working full-time as a Graphic Designer at <a href="https://midantrimsigns.com/" target="_blank">Mid Antrim Signs</a></p>
-        </div>
-        <div className="background card">
-          yeppa
-        </div>
-        <div className="background card">
-          yeppa
+          </div>
+          <p>Learn about who I am.</p>
         </div>
       </div>
     </>
