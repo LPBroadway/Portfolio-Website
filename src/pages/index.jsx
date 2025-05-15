@@ -103,7 +103,7 @@ function Index() {
         </div>
       </div>
       <div className="row flex">
-        <div className="scale card-link background" onClick={() => { window.location.href = '/projects' }}>
+        <div className="scale card card-link background" onClick={() => { window.location.href = '/projects' }}>
           <div className="link-title">
             <span className="title">Projects</span>
             <span class="material-symbols-rounded">arrow_outward</span>
@@ -117,7 +117,7 @@ function Index() {
         <div className="background card">
           yeppa
         </div>
-        <div className="scale card-link background">
+        <div className="scale card card-link background">
         <div className="link-title">
           <span className="title">About Me</span>
           <span class="material-symbols-rounded">arrow_outward</span>
