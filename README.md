@@ -1,4 +1,4 @@
-# Liam Broadway Portfolio Website
+# Portfolio Website
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a web developer with a background in graphic design. Set to graduate in July 2025 and currently launching my professional journey in web development.
 
@@ -23,26 +23,24 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 .
 ├── public/
 │   ├── assets/
-│   │   └── star.svg
-│   ├── icons/
-│   │   ├── github.svg
+│   │   └── star.svg          # For use in React Three Fiber - map for points materials.
+│   ├── icons/                # Kept original SVG files despite embedding them.
+│   │   ├── github.svg 
 │   │   └── linkedin.svg
-│   ├── images/
-│   │   └── pfp.jpg
-│   └── skills/
-│       └── vite.svg
+│   └── images/               # Images for use in pages.
+│       └── pfp.jpg
 ├── src/
-│   ├── assets/
+│   ├── assets/               # React Three Fiber files.
 │   │   └── starfield.jsx
 │   ├── css/
-│   │   ├── main.css
-│   │   └── theme.css
+│   │   ├── main.css          # Main CSS file
+│   │   └── theme.css         # Theme CSS file containing colours for use in main.css
 │   ├── pages/
-│   │   └── index.jsx
+│   │   └── index.jsx         # Landing page for main domain visit.
 │   └── main.jsx
 ├── .gitignore
 ├── eslint.config.js
-├── index.html
+├── index.html                # Main page template
 ├── package.json
 ├── README.md
 └── vite.config.js
