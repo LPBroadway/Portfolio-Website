@@ -9,18 +9,25 @@ function Index() {
     <>
       <div className="row">
         <div className="column aboutme">
-          <div className="background card">
-            <span className="title">Welcome</span>
-            <p>
-              Hi there! I'm Liam. A web developer with a background in graphic design and a keen eye for detail. I build responsive, custom-styled websites that blend clean code with thoughtful design.
-            </p>
-            <p>
-              I’ve just completed my degree in Interactive Computing and will be graduating in July. I'm currently looking to start my journey in the tech industry.
-            </p>
-            <p>
-              If you’re looking for a motivated developer with a strong foundation and a love for learning, I’d love to hear from you.
-            </p>
+          {/* Main description and profile picture */}
+          <div className="row">
+            <div className="background row">
+              <div className="card">
+                <span className="title">Welcome</span>
+                <p>
+                  Hi there! I'm Liam. A web developer with a background in graphic design and a keen eye for detail. I build responsive, custom-styled websites that blend clean code with thoughtful design.
+                </p>
+                <p>
+                  I’ve just completed my degree in Interactive Computing and will be graduating in July. I'm currently looking to start my journey in the tech industry.
+                </p>
+                <p>
+                  If you’re looking for a motivated developer with a strong foundation and a love for learning, I’d love to hear from you.
+                </p>
+              </div>
+              <img className="profilepic" src="/images/pfp.jpg" alt="Liam Broadway" />
+            </div>
           </div>
+          {/* Links to social media and CV */}
           <div className="links background card">
             <a className="anchor-button"><span class="material-symbols-rounded">mail</span> Email</a>
             <a className="anchor-button" href="https://github.com/LPBroadway/" target="_blank">
@@ -34,6 +41,7 @@ function Index() {
             <a className="anchor-button"><span class="material-symbols-rounded">download</span> CV</a>
           </div>
         </div>
+        {/* Skills section */}
         <div className="profile background card">
           <span className="title">Skills</span>
           <p>Primarily working with a JavaScript-based tech stack, including:</p>
@@ -102,27 +110,32 @@ function Index() {
           </div>
         </div>
       </div>
+      {/* My projects and work */}
       <div className="row flex">
         <div className="scale card card-link background" onClick={() => { window.location.href = '/projects' }}>
           <div className="link-title">
             <span className="title">Projects</span>
             <span class="material-symbols-rounded">arrow_outward</span>
-            </div>
+          </div>
           <p>Check out some of my university coursework or personal projects.</p>
         </div>
         <div className="background card">
           <span className="title">Current Position</span>
           <p>Working full-time as a Graphic Designer at <a className="link" href="https://midantrimsigns.com/" target="_blank">Mid Antrim Signs</a></p>
         </div>
-        <div className="scale card card-link background">
-        <div className="link-title">
-          <span className="title">About Me</span>
-          <span class="material-symbols-rounded">arrow_outward</span>
+        <div className="scale card card-link background" onClick={() => { window.location.href = '/aboutme' }}>
+          <div className="link-title">
+            <span className="title">About Me</span>
+            <span class="material-symbols-rounded">arrow_outward</span>
           </div>
           <p>Learn about who I am.</p>
         </div>
-        <div className="background card constructed">
-          <p>Constructed with React and Vite. See source code <a className="link" href="https://github.com/LPBroadway/Portfolio-Website" target="_blank">here</a>.</p>
+        <div className="background card-link card scale constructed" onClick={() => { window.open('https://github.com/LPBroadway/Portfolio-Website', '_blank') }}>
+          <div className="link-title">
+            <span className="title">Source Code</span>
+            <span class="material-symbols-rounded">arrow_outward</span>
+          </div>
+          <p>Constructed with React and Vite.</p>
         </div>
       </div>
     </>
