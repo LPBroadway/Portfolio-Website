@@ -1,5 +1,59 @@
 @import 'theme.css';
 
+@media (max-width: 768px) {
+    .container {
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        padding: 2rem !important;
+        box-sizing: border-box !important;
+    }
+
+    .maxw {
+        width: 100% !important;
+    }
+
+    .flex>* {
+        flex: 0 1 100% !important;
+    }
+
+    .links {
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
+        justify-content: center !important;
+    }
+
+    .profilepic {
+        width: 50% !important;
+        margin-top: 1rem !important;
+    }
+
+    .row {
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .column {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+
+    .aboutme {
+        flex: 0 1 100% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 970px) {
+    .tablet {
+        flex-direction: column !important;
+    }
+
+    .tablet-padding {
+        padding-bottom: 5rem !important;
+    }
+}
+
 @keyframes border-highlight {
     0% {
         border-color: var(--grid-highlight);
@@ -78,7 +132,6 @@ h6 {
     flex: 1 1 auto;
     overflow: hidden;
     align-items: center;
-    gap: 20px;
     margin: 5vh;
 }
 
@@ -157,6 +210,7 @@ a {
     height: 1.5rem;
     width: auto;
     fill: currentColor;
+    object-fit: contain;
 }
 
 .active {
@@ -232,13 +286,11 @@ a:hover {
 }
 
 .aboutme {
-    flex: 0 1 calc(70% - 1vw);
-    min-width: 300px;
+    flex: 1 1 calc(70% - 1rem);
 }
 
 .profile {
-    flex: 0 1 calc(30% - 1vw);
-    min-width: 300px;
+    flex: 1 1 calc(30% - 1rem);
 }
 
 .links {
