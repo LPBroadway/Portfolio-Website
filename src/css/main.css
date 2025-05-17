@@ -324,4 +324,24 @@ a:hover {
 .projects {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.projects>* {
+    flex: 0 1 calc(33% - 0.5rem);
+    min-width: 300px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.technology {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
