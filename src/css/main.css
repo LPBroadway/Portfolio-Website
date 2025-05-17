@@ -318,4 +318,10 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    gap: 1rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
 }

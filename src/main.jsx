@@ -3,6 +3,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './css/main.css'
 import Index from './pages/index.jsx'
+import Projects from './pages/projects.jsx'
 import Starfield from './assets/starfield.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
           <div className="content maxw">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/projects" element={<Projects />} />
             </Routes>
           </div>
         </div>

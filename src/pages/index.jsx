@@ -1,9 +1,18 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Index() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   useEffect(() => {
     document.title = 'Liam Broadway - Portfolio';
   }, []);
+
+  const handleNavigation = (path) => {
+    localStorage.setItem('previousPath', location.pathname);
+    navigate(path);
+  }
 
   return (
     <>
@@ -112,7 +121,7 @@ function Index() {
       </div>
       {/* My projects and work */}
       <div className="row flex">
-        <div className="scale card card-link background" onClick={() => { window.location.href = '/projects' }}>
+        <div className="scale card card-link background" onClick={() => handleNavigation('/projects')}>
           <div className="link-title">
             <span className="title">Projects</span>
             <span class="material-symbols-rounded">arrow_outward</span>
