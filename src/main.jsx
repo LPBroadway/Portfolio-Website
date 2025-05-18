@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import './css/main.css'
 import Index from './pages/index.jsx'
 import Projects from './pages/projects.jsx'
+import AboutMe from './pages/aboutme.jsx'
 import Starfield from './assets/starfield.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -31,6 +32,7 @@ createRoot(document.getElementById('root')).render(
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/aboutme" element={<AboutMe />} />
             </Routes>
           </div>
         </div>

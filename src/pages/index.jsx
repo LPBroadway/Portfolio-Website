@@ -245,7 +245,7 @@ function Index() {
             <span className="title">About Me</span>
             <span className="material-symbols-rounded">arrow_outward</span>
           </div>
-          <p>Learn about who I am.</p>
+          <p>Learn about my story.</p>
         </div>
         <div className="background card-link card scale constructed" onClick={() => { window.open('https://github.com/LPBroadway/Portfolio-Website', '_blank') }}>
           <div className="link-title">

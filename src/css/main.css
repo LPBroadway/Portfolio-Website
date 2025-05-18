@@ -51,6 +51,23 @@
     .aboutme {
         flex: 0 1 100% !important;
     }
+
+    .showcase {
+        width: 100% !important;
+        margin: 1rem auto 1rem auto !important;
+        border-radius: 0 !important;
+    }
+
+    .showcase img {
+        border-radius: 1rem 1rem 0 0 !important;
+    }
+
+    .image-note {
+        position: static !important;
+        display: block !important;
+        font-size: 0.8rem !important;
+        border-radius: 0 0 1rem 1rem !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 970px) {
@@ -404,4 +421,58 @@ a:hover {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+}
+
+.showcase {
+    position: relative;
+    width: 60%;
+    margin: 2rem auto 2rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.maxh {
+    max-height: 400px;
+}
+
+.image-note {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--background);
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    gap: 5px;
+    text-align: right;
+    padding: 0.8rem;
+    font-style: italic;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.padding-bottom {
+    padding-bottom: 5rem;
+}
+
+.aboutme .link {
+    text-decoration: underline;
+}
+
+.signature {
+    font-family: "Mea Culpa", cursive;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
 }
