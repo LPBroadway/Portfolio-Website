@@ -48,7 +48,7 @@ const technologies_icons = [
 ]
 
 function Projects() {
-    const previousPath = localStorage.getItem('previousPath');
+    const previousPath = localStorage.getItem('previousPath') || '/';
 
     const iconLookup = Object.fromEntries(technologies_icons.map(icon => [icon.name, icon.icon]));
 

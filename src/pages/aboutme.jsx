@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 function AboutMe() {
-    const previousPath = localStorage.getItem('previousPath');
+    const previousPath = localStorage.getItem('previousPath') || '/';
 
     useEffect(() => {
         document.title = 'Liam Broadway - About Me';
