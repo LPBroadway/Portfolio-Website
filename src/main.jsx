@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router';
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Analytics } from "@vercel/analytics/next"
 import './css/main.css'
 import Index from './pages/index.jsx'
 import Projects from './pages/projects.jsx'
