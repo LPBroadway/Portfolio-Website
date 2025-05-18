@@ -9,6 +9,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - **Modern aesthetic** with clean typography and subtle animations
 - **Skills showcase** highlighting my expertise in React, Express, MongoDB, Node, and more
 - **Project gallery** displaying my university coursework and personal projects
+- **About me** showcasing my personal story of growth.
 
 ## 🛠️ Tech Stack
 
@@ -16,38 +17,41 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - [Vite](https://vitejs.dev/) - Build tool
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/) - For 3D graphics
 - [React Router](https://reactrouter.com/) - Navigation and routing
+- [Vercel](https://www.vercel.com) - Hosting
 
 ## 🏗️ Project Structure
 
 ```
 .
-├── public/
-│   ├── assets/
-│   │   └── star.svg          # For use in React Three Fiber - map for points materials.
-│   ├── icons/                # Kept original SVG files despite embedding them.
-│   │   ├── github.svg 
-│   │   └── linkedin.svg
-│   └── images/               # Images for use in pages.
-│       └── pfp.jpg
+├── public/                # Static assets
+│   ├── assets/            # General assets
+│   │   └── star.svg       # ThreeJS Points texture
+│   ├── files/             # Downloadable files
+│   │   └── Liam_Broadway_CV_2025.pdf
+│   ├── icons/             # Retained SVG Icons
+│   └── images/            # Website images
+│       ├── history/       # Images for about page
+│       └── projects/      # Project screenshots
 ├── src/
-│   ├── assets/               # React Three Fiber files.
-│   │   └── starfield.jsx
+│   ├── assets/            # ThreeJS Files
+│   │   └── starfield.jsx  # 3D starfield background
 │   ├── css/
-│   │   ├── main.css          # Main CSS file
-│   │   └── theme.css         # Theme CSS file containing colours for use in main.css
-│   ├── pages/
-│   │   └── index.jsx         # Landing page for main domain visit.
-│   └── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html                # Main page template
-├── package.json
-├── README.md
-└── vite.config.js
+│   │   ├── main.css       # Main styling
+│   │   └── theme.css      # Color variables and theming
+│   ├── pages/             # Page components
+│   │   ├── aboutme.jsx    # Personal story page
+│   │   ├── index.jsx      # Landing page
+│   │   └── projects.jsx   # Projects showcase
+│   └── main.jsx           # App entry point
+├── package.json           # Dependencies and scripts
+└── vite.config.js         # Vite configuration
 ```
 
 ## 📱 Contact
 
 Feel free to reach out to me through:
-![GitHub](https://github.com/LPBroadway/)
-![LinkedIn](https://www.linkedin.com/in/liam-broadway/)
+-[GitHub](https://github.com/LPBroadway/)
+-[LinkedIn](https://www.linkedin.com/in/liam-broadway/)
+
+## 🙏 Acknowledgements
+Special thanks to Mid Antrim Signs for their support during my studies.
