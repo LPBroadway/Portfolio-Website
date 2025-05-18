@@ -80,6 +80,7 @@ function AboutMe() {
                             <p>That project reminded me who I was and propelled me in the direction I’d lost sight of.</p>
                             <p>So, I took a chance.</p>
                             <p>I emailed Ulster University to ask if there was any way I could return and finish what I started. Thanks to the strength of my previous grades and attendance, they welcomed me back — and I’ve been finishing my final year ever since.</p>
+                            <p>None of that would’ve been possible without the incredible understanding and support of my boss, Mark, at Mid Antrim Signs. I’m deeply grateful for his encouragement — it gave me the space and confidence I needed to take that leap back into higher education.</p>
                             <span className="title">The Future: What Lies Ahead</span>
                             <div className="showcase maxh">
                                 <img src="/images/history/bus-stop.jpg" alt="Jordanstown Bus Stop." />
