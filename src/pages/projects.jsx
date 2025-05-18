@@ -48,8 +48,6 @@ const technologies_icons = [
 ]
 
 function Projects() {
-    const previousPath = localStorage.getItem('previousPath') || '/';
-
     const iconLookup = Object.fromEntries(technologies_icons.map(icon => [icon.name, icon.icon]));
 
     useEffect(() => {
@@ -59,7 +57,7 @@ function Projects() {
     return (
         <>
             <div>
-                <a className="anchor-button" onClick={() => { window.location.href = previousPath }}>
+                <a className="anchor-button" href="/">
                     <span className="material-symbols-rounded">arrow_back</span> Go Back</a>
             </div>
             <div className="row projects">

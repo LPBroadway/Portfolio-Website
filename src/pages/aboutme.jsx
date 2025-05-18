@@ -10,7 +10,7 @@ function AboutMe() {
     return (
         <>
             <div>
-                <a className="anchor-button" onClick={() => { window.location.href = previousPath }}>
+                <a className="anchor-button" href="/">
                     <span className="material-symbols-rounded">arrow_back</span> Go Back</a>
             </div>
             <div className="row padding-bottom">
