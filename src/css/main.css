@@ -68,6 +68,12 @@
         font-size: 0.8rem !important;
         border-radius: 0 0 1rem 1rem !important;
     }
+    .projects {
+        flex-direction: column !important;
+    }
+    .projects>* {
+        flex: 0 1 auto !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 970px) {
