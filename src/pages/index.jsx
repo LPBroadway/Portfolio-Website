@@ -44,7 +44,7 @@ function Index() {
                       Hi there! I'm Liam. A web developer with a background in graphic design and a keen eye for detail. I build responsive, custom-styled websites that blend clean code with thoughtful design.
                     </p>
                     <p>
-                      I’ve just completed my degree in Interactive Computing and will be graduating in July. I'm currently looking to start my journey in the tech industry.
+                      I’ve just completed my degree in Interactive Computing and graduated with First Class Honours in July. I'm currently looking to start my journey in the tech industry.
                     </p>
                     <p>
                       If you’re looking for a motivated developer with a strong foundation and a love for learning, I’d love to hear from you.
